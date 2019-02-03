@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From name:</strong>
+  <%= @letter.from_name %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @letter.message %>
+</p>
+
+<p>
+  <strong>To name:</strong>
+  <%= @letter.to_name %>
+</p>
+
+<%= link_to 'Edit', edit_letter_path(@letter) %> |
+<%= link_to 'Back', letters_path %>
