@@ -49,7 +49,7 @@ test:
 #
 production:
   <<: *default
-  host: 'DB_HOSTNAME'
+  host: <%= ENV['DB_HOSTNAME'] %>
   database: <%= ENV['CLEARDB_DATABASE_URL'] %>
   username: 'b57e94dc674ea8'
   password: '223926a8'
