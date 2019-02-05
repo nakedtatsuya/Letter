@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .letters-container {
   margin: 0 auto;
-  width: 80%;
+  width: 100%!important;
 }
 
 .coverTemplate {
@@ -173,6 +173,10 @@
   #notice {
     font-size: 16px;
   }
+  .letters-container {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 @media (max-width:768px) {
@@ -192,5 +196,9 @@
       right: 3px;
       bottom: 20px;
     }
+  }
+  .letters-container {
+    margin: 0;
+    width: 100%;
   }
 }

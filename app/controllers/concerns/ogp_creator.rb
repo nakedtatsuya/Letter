@@ -9,7 +9,7 @@ class OgpCreator
   FONT_SIZE = 32
   BODY_FONT_SIZE = 18
   INDENTION_COUNT = 18
-  ROW_LIMIT = 16
+  ROW_LIMIT = 14
 
   def self.build(text)
     text = prepare_text(text)
