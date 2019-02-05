@@ -1,4 +1,4 @@
-<% og_image @letter.image.url %>
+<% og_image @letter.image.url if @letter.image? %>
 <p id="notice"><%= notice %></p>
 
 

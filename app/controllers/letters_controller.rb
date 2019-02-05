@@ -21,7 +21,6 @@ class LettersController < ApplicationController
     @letter.image = @image
     respond_to do |format|
       if @letter.save
-
         format.html { redirect_to @letter, notice: '手紙を作成しました' }
         format.json { render :show, status: :created, location: @letter }
       else
