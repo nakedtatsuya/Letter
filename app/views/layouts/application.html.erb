@@ -3,10 +3,10 @@
   <head>
     <title>Letter | <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
-    <meta property="og:title" content='あなたへの手紙' />
+    <meta property="og:title" content='君に手紙を書いたよ' />
     <meta content=<%= url_for(only_path: false) %> property="og:url">
     <meta property="og:image" content=<%= yield(:image) %> />
-    <meta property="og:description" content='メッセージを簡単に送れる時代だからこそ、手紙の良さを引き出したい。ネットなのに日頃の思いを伝えられるようなサービスです。お母さんから娘へ、気になるあの子へ、手紙を書いてみませんか？' />
+    <meta property="og:description" content='毎日の思いを伝えよう' />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= favicon_link_tag('favicon.ico') %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
