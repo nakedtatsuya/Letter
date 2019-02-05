@@ -151,3 +151,38 @@ header {
   height: 80vh;
   width: auto;
 }
+
+#error_explanation {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: #FF7D7D;
+  ul {
+    width: 80%;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    li {
+      width: 100%;
+      list-style: none;
+    }
+  }
+}
+
+.field_with_errors {
+  display: block;
+  background-color: rgba(0,0,0,0);
+  input {
+    &::placeholder {
+      color: #FF7D7D!important;
+    }
+  }
+  textarea {
+    &::placeholder {
+      color: #FF7D7D!important;
+    }
+  }
+}

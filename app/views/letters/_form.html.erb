@@ -1,8 +1,6 @@
 <%= form_with(model: letter, local: true, id: 'new_letter') do |form| %>
   <% if letter.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(letter.errors.count, "error") %> prohibited this letter from being saved:</h2>
-
       <ul>
       <% letter.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -22,6 +20,6 @@
       </div>
      <%= form.submit :投函する, class: 'btn actions' %>
   </div>
-
+  <%= form.submit :投函する, class: 'phone_btn actions' %>
 
 <% end %>

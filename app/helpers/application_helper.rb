@@ -3,7 +3,7 @@ module ApplicationHelper
     if path
       provide(:image, path)
     else
-      provide(:image, 'icon.png')
+      provide(:image, 'favicon.ico')
     end
   end
 end

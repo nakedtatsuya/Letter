@@ -11,5 +11,8 @@ class Letter < ApplicationRecord
             length: { maximum: 200 }
   validates :to_name,
             presence: true,
-            length: { maximum: 6 }
+            length: {
+                maximum: 6,
+                too_long: "名前は６文字までしか入れられません"
+            }
 end

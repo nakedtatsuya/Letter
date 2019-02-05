@@ -1,0 +1,9 @@
+ja:
+  activerecord:
+    models:
+      letter: レター
+    attributes:
+      letter:
+        from_name: 送り主
+        message: メッセージ
+        to_name: 宛名

@@ -127,3 +127,70 @@
 #notice {
   font-size: 16px;
 }
+
+.phone_btn {
+  display: none;
+}
+
+@media (max-width:480px) {
+  .letter {
+    .to_box {
+      left: 2px;
+      top: 50px;
+    }
+    .from_box {
+      right: 3px;
+      bottom: 20px;
+    }
+  }
+  .btn {
+    display: none;
+  }
+  .phone_btn{
+    box-sizing: border-box;
+    margin: 8px 24px;
+    width: 80%;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    background: #87befd;
+    color: #FFF;
+    height: 30px;
+    border-radius: 4px;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #87befd;
+    border: dashed 1px #FFF;
+    transition: .4s;
+  }
+
+  .phone_btn:hover{
+    background: #668ad8;
+    box-shadow: 0px 0px 0px 5px #668ad8;
+  }
+
+  #notice {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:768px) {
+  .btn {
+    font-size: 14px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .letter {
+    .to_box {
+      left: 2px;
+      top: 50px;
+    }
+    .from_box {
+      right: 3px;
+      bottom: 20px;
+    }
+  }
+}
