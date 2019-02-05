@@ -1,30 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Letters</h1>
+<div class="letters-container">
+  <% @letters.each do |letter| %>
+      <div class="coverTemplate">
+        <%= letter.to_name  %>
 
-<table>
-  <thead>
-    <tr>
-      <th>From name</th>
-      <th>Message</th>
-      <th>To name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+      </div>
+      <div><%= image_tag letter.image.url if letter.image? %></div>
+      <div><%= link_to 'Show', letter %></div>
+  <% end %>
+</div>
 
-  <tbody>
-    <% @letters.each do |letter| %>
-      <tr>
-        <td><%= letter.from_name %></td>
-        <td><%= letter.message %></td>
-        <td><%= letter.to_name %></td>
-        <td><%= link_to 'Show', letter %></td>
-        <td><%= link_to 'Edit', edit_letter_path(letter) %></td>
-        <td><%= link_to 'Destroy', letter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 

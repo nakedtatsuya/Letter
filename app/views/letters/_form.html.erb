@@ -1,4 +1,4 @@
-<%= form_with(model: letter, local: true) do |form| %>
+<%= form_with(model: letter, local: true, id: 'new_letter') do |form| %>
   <% if letter.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(letter.errors.count, "error") %> prohibited this letter from being saved:</h2>
@@ -10,23 +10,18 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :from_name %>
-    <%= form.text_field :from_name, id: :letter_from_name %>
+　<div class="letter">
+      <div class="field to_box">
+        <%= form.text_field :to_name, id: :letter_to_name, :placeholder => "宛名" %>
+      </div>
+      <div class="field msg_box">
+        <%= form.text_area :message, id: :letter_message, :placeholder => "メッセージ" %>
+      </div>
+      <div class="field from_box">
+        <%= form.text_field :from_name, id: :letter_from_name, :placeholder => "送り主" %>
+      </div>
+     <%= form.submit :投函する, class: 'btn actions' %>
   </div>
 
-  <div class="field">
-    <%= form.label :message %>
-    <%= form.text_field :message, id: :letter_message %>
-  </div>
 
-  <div class="field">
-    <%= form.label :to_name %>
-    <%= form.text_field :to_name, id: :letter_to_name %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
 <% end %>

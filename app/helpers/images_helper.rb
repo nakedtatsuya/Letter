@@ -1,4 +1,4 @@
-module ApplicationHelper
+module ImagesHelper
   def og_image(path)
     if path
       provide(:image, path)
