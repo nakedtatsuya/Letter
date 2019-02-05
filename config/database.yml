@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['CLEARDB_DATABASE_URL'] %>
   host: <%= ENV['DB_HOSTNAME'] %>
   database: 'heroku_99d0ab4043688a8'
   username: 'b57e94dc674ea8'
