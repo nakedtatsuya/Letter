@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   host: <%= ENV['DB_HOSTNAME'] %>
-  database: <%= ENV['CLEARDB_DATABASE_URL'] %>
+  database: 'heroku_99d0ab4043688a8'
   username: 'b57e94dc674ea8'
   password: '223926a8'
